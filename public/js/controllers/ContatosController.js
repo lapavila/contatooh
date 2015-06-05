@@ -1,6 +1,6 @@
 var app = angular.module('contatooh')
 
-app.controller('ContatosController', function($scope, $resource) {
+app.controller('ContatosController', function($scope, Contato) {
 
 	$scope.total = 0;
 
@@ -9,8 +9,6 @@ app.controller('ContatosController', function($scope, $resource) {
 	$scope.filtro = '';
 
 	$scope.mensagem = {texto: ''};
-
-	var Contato = $resource('/contatos/:id');
 
 	var buscaContatos = function() {
 		Contato.query(
