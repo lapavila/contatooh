@@ -1,0 +1,12 @@
+<!-- // ./public/index.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bem Vindo</title>
+	</head>
+	<body>
+	<%=nome %>:
+		<h1>Bem vindo ao <%=nome %></h1>
+	</body>
+</html>
