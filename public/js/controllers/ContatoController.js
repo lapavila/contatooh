@@ -18,16 +18,16 @@ app.controller('ContatoController', function($scope, $routeParams, Contato) {
 	}
 
 	$scope.salvar = function() {
-		$scope.contato.$save()
-			.then(function() {
+		$scope.contato.$save(
+			function() {
 				$scope.mensagem = {
 					texto: 'Salvo com sucesso'
 				};
 				$scope.contato = new Contato();
-			})
-			.catch(function(erro) {
+			},
+			function(erro) {
 				$scope.mensagem = {
-					texto: 'Não fpoi possível Salvar'
+					texto: 'Não foi possível Salvar'
 				};
 			});
 	};

@@ -6,6 +6,7 @@ var contatos = [
 	{_id: 4, nome: "Contato 04", email: "email04@gmail.com"},
 	{_id: 5, nome: "Contato 05", email: "email05@gmail.com"},
 	{_id: 6, nome: "Contato 06", email: "email06@gmail.com"},
+	{_id: 7, nome: "Contato 07", email: "email07@gmail.com"},
 ];
 
 module.exports = function() {
